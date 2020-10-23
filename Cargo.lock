@@ -1534,6 +1534,7 @@ dependencies = [
 name = "rust-g"
 version = "0.4.6"
 dependencies = [
+ "byteorder",
  "chrono",
  "dashmap",
  "flume",
@@ -1553,6 +1554,7 @@ dependencies = [
  "sha2 0.9.1",
  "thiserror",
  "url",
+ "zero85",
 ]
 
 [[package]]
@@ -2287,3 +2289,9 @@ dependencies = [
  "winapi 0.2.8",
  "winapi-build",
 ]
+
+[[package]]
+name = "zero85"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6687a10cb200d98c452f6745235b6a23eef23e4fdd324d0f8597d239c90c5e37"
