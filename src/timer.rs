@@ -68,8 +68,8 @@ byond_fn! { get_timers() {
         while diffms >= 100 {
             vec.append(&mut timers_mut.realwheel.expire());
             diffms -= 100;
+            timers_mut.lastrun = now;
         }
-        timers_mut.lastrun = now;
         }
     );
     Some(vec.join(","))
