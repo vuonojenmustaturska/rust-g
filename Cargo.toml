@@ -40,7 +40,7 @@ mysql = { version = "20.0", optional = true }
 dashmap = { version = "3.11", optional = true }
 zip = { version = "0.5.8", optional = true }
 rand = {version = "0.7", optional = true}
-pendulum = {version = "0.3", optional = true}
+ferris = {version = "0.2", optional = true}
 
 
 [features]
@@ -60,7 +60,7 @@ sql = ["mysql", "serde", "serde_json", "once_cell", "dashmap", "jobs"]
 hash = ["md-5", "sha-1", "sha2", "hex", "twox-hash", "const-random"]
 url = ["url-dep", "percent-encoding"]
 unzip = ["zip", "jobs"]
-timer = ["pendulum"]
+timer = ["ferris"]
 
 # internal feature-like things
 jobs = ["flume"]
